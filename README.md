@@ -36,7 +36,9 @@
 
 这是本程序的核心，几乎所有的可见元素都是用类来构造的，比如继承了LiveObg的Role和Monster，组合了Animation类（攻击动画）、Equipment类（装备）、BmpAni类（继承Animation）（人物动画）、Slot类（血槽、体力槽）等……本游戏深度运用了C++的多态性，依赖类的继承与组合来实现多种功能。
 
-![img](README.assets/clip_image004.jpg)![img](file:///C:/Users/ADMINI~1/AppData/Local/Temp/msohtmlclip1/01/clip_image006.jpg)![img](file:///C:/Users/ADMINI~1/AppData/Local/Temp/msohtmlclip1/01/clip_image008.jpg)
+![img](README.assets/clip_image004.jpg)
+
+![img](README.assets/clip_image004.jpg)
 
  
 
@@ -46,13 +48,17 @@
 
 使用TimeControler和TurnControler来控制游戏回合，40ms刷新一次，每秒更新倒计时来判断当前回合是否到时限。
 
-![img](README.assets/clip_image012.jpg) ![img](file:///C:/Users/ADMINI~1/AppData/Local/Temp/msohtmlclip1/01/clip_image014.jpg)
+![img](README.assets/clip_image012.jpg)
 
-由于使用了自己写的大量封装的类，绘图也十分方便，使用双缓冲调用Role、BgMap等对象的Public绘图函数，如左下图。
+![img](README.assets/clip_image014.jpg)
 
-![img](README.assets/clip_image016.jpg) ![img](file:///C:/Users/ADMINI~1/AppData/Local/Temp/msohtmlclip1/01/clip_image018.jpg)
+由于使用了自己写的大量封装的类，绘图也十分方便，使用双缓冲调用Role、BgMap等对象的Public绘图函数，如下图。
 
-攻击时使用随机函数触发随机效果，如右上图。效果显示（暴击格挡等状态、伤害大小、血条减少动画）也是在Role角色类的封装后的绘图函数中。
+![img](README.assets/clip_image016.jpg) 
+
+![img](README.assets/clip_image018.jpg)
+
+攻击时使用随机函数触发随机效果，如上图。效果显示（暴击格挡等状态、伤害大小、血条减少动画）也是在Role角色类的封装后的绘图函数中。
 
  
 
@@ -62,17 +68,23 @@
 
 **游戏界面**：随机地图，左上角倒计时，两个角色随机分布两边，最下面是蓄力槽，用来控制攻击力度
 
-![img](README.assets/clip_image020.jpg) ![img](file:///C:/Users/ADMINI~1/AppData/Local/Temp/msohtmlclip1/01/clip_image022.jpg)
+![img](README.assets/clip_image020.jpg)
+
+![img](README.assets/clip_image022.jpg)
 
 **攻击界面**：蓄力后扔出武器砸向对手，随机触发一些状态：大招、暴击、格挡、免疫、吸收
 
-![img](file:///C:/Users/ADMINI~1/AppData/Local/Temp/msohtmlclip1/01/clip_image024.jpg) ![img](README.assets/clip_image026.jpg)
+![img](README.assets/clip_image024.jpg)
+
+![img](README.assets/clip_image026.jpg)
 
 **瞬移操作**：按下F键，出现飞机，可瞬移到飞机能飞到的位置
 
 **结束界面**：GameOver，按空格键重新游戏。
 
-![img](README.assets/clip_image028.jpg)![img](file:///C:/Users/ADMINI~1/AppData/Local/Temp/msohtmlclip1/01/clip_image030.jpg)
+![img](README.assets/clip_image028.jpg)
+
+![img](README.assets/clip_image030.jpg)
 
 
 
